@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/fa7feb25-62f3-42d1-bdd7-23564d01e15b/resourceGroups/JhetzRG/providers/Microsoft.Web/sites/eldercareinsights",
+    "appService.deploySubpath": "."
+}
