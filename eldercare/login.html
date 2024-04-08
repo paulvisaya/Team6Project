@@ -53,7 +53,36 @@
 
   <script src="index.js"></script>
 
- 
+  <script>
+    function solve() {
+      // Get the username and password entered by the user
+      var username = document.getElementById("first").value;
+      var password = document.getElementById("password").value;
+      //var valueToPass = false;
+      
+      // Perform any necessary validation or processing here
+
+      // For demonstration purposes, let's log the values to the console
+      // console.log("Username:", username);
+      // console.log("Password:", password);
+
+      
+
+      if (username == "admin"){
+    
+        window.location.href = "index.html";
+        //alert("Form submitted successfully!");
+        sessionStorage.setItem('loginSuccess', true);
+
+         <button type="button" onclick="SignOUt()"> SignOut </button>
+      }
+      else {
+        sessionStorage.setItem('loginSuccess', false);
+        alert("Invalid User!!!");
+      }
+        
+  }
+</script>
 </uniquebody>
 
 </html>

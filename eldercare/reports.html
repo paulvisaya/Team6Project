@@ -34,13 +34,36 @@
         </div>
     </nav>
 
-   
+    <script>
+                
 
- <main>
-        <center><h1>Comprehesive Residents and Employees Engagement Analysis</h1></center>
-        <!-- Replace 'YourPowerBIReportEmbedURL' with the actual embed URL -->
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMWM1ODNmYzUtMDRiZi00ZWU4LWEyMjgtZDcwNTJiODFiNjJhIiwidCI6ImY1MmYyMTgzLTlmNjctNGFkMi1iNjU2LTZmNzU0ZmUxOTZjYiIsImMiOjZ9&pageName=ReportSection689d04be8e080dd50179" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
-    </main>
+        var loginsuccessful =sessionStorage.getItem('loginSuccess');
+        // Do something with the value, for example, display it
+        //document.write("Value received from Page 1: " + loginsuccessful);
+       
+        
+        if (loginsuccessful === "true") {
+            var PowerBILink = "https://app.powerbi.com/view?r=eyJrIjoiMWM1ODNmYzUtMDRiZi00ZWU4LWEyMjgtZDcwNTJiODFiNjJhIiwidCI6ImY1MmYyMTgzLTlmNjctNGFkMi1iNjU2LTZmNzU0ZmUxOTZjYiIsImMiOjZ9&pageName=ReportSection8e78d15c1e572e36140c";
+            
+        } else {
+            var PowerBILink = "https://app.powerbi.com/view?r=eyJrIjoiNDYwMTY0YjMtM2RlMi00YTEzLTg2OTgtYTgyYzM0NWNiNDgxIiwidCI6ImY1MmYyMTgzLTlmNjctNGFkMi1iNjU2LTZmNzU0ZmUxOTZjYiIsImMiOjZ9&pageName=ReportSection67bd91ae7643d5a1199e";
+            
+        }
+
+    
+
+    </script> 
+
+<main>
+    <center><h1>Comprehensive Residents and Employees Engagement Analysis</h1></center>
+    <!-- Replace 'YourPowerBIReportEmbedURL' with the actual embed URL -->
+    <iframe src="" id="powerBIiframe" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+</main>
+
+<script>
+    // Set the src attribute of the iframe using JavaScript
+    document.getElementById("powerBIiframe").src = PowerBILink;
+</script>
 
 <footer class="footer" style="height: 200px; color: white;">
     <div class="container">
